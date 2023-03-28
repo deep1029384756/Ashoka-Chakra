@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashoka Chakra</title>
+</head>
+<body>
+    <section class="home">
+        <div class="bharat">
+            <!-- view port whole screen -->
+            <svg  viewBox="0 0 2048 2048"
+            xmlns="http://www.w3.org/2000/svg"
+           >
+           <!-- outer circle -->
+            <circle cx="500" cy="500" r="250"  stroke="blue"
+            fill="white" stroke-width="30"/>
+            <!-- inner circle -->
+            <circle cx="500" cy="500" r="40" fill="blue" />
+            <!-- top x and y, right, bottom, left-->
+            <g id = "quadrant">
+                <g id="spoke">
+                    <polygon points="500,500 510,600 500,750 490,600" fill="blue" />
+                    <circle cx = "470" cy ="270" r="15" fill="blue"></circle>
+                </g>
+              <!-- rotate (angle, center coordinates) -->
+              <use xlink:href="#spoke" transform="rotate(15 500 500)" />
+              <use xlink:href="#spoke" transform="rotate(30 500 500)" />
+              <use xlink:href="#spoke" transform="rotate(45 500 500)" />
+              <use xlink:href="#spoke" transform="rotate(60 500 500)" />
+              <use xlink:href="#spoke" transform="rotate(75 500 500)" />
+            </g>
+            <use xlink:href="#quadrant" transform="rotate(90, 500,500)" />
+            <use xlink:href="#quadrant" transform="rotate(180,500,500)" />
+            <use xlink:href="#quadrant" transform="rotate(270,500,500)" />
+            </svg>
+        </div>
+    </section>
+</body>
+</html>
